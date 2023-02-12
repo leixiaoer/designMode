@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-
 public class OrderPizza {
 
 	AbsFactory factory;
@@ -15,6 +14,8 @@ public class OrderPizza {
 	// 构造器
 	public OrderPizza(AbsFactory factory) {
 		setFactory(factory);
+
+
 	}
 
 	private void setFactory(AbsFactory factory) {

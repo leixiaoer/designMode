@@ -1,0 +1,27 @@
+package cn.leo.pattern.adapterpattern.springmvcadapter;
+
+//多种Controller实现  
+public interface Controller {
+
+}
+
+/**
+ * 下方为多个controller实现类
+ */
+class HttpController implements Controller {
+    public void doHttpHandler() {
+        System.out.println("http...");
+    }
+}
+
+class SimpleController implements Controller {
+    public void doSimplerHandler() {
+        System.out.println("simple...");
+    }
+}
+
+class AnnotationController implements Controller {
+    public void doAnnotationHandler() {
+        System.out.println("annotation...");
+    }
+}
